@@ -15,11 +15,11 @@ JavaScript does not need to be installed. It is a scripting language. Since it i
 ### Using option 2 above follow these steps to create a Hello World program:
 1. find the code on: http://web.stanford.edu/class/cs98si/slides/overview.html
 2. Open a new JavaScript project in Eclipse:
-  a. go to File-->New-->JavaScript Project
-  b. follow the prompt to name the project
+   - go to File-->New-->JavaScript Project
+   - follow the prompt to name the project
 3. add a new script file:
-  a. go to File-->New-->JavaScript File
-  b. follow the promt to name the file (remember as stated above to add the .js file extension)
+   - go to File-->New-->JavaScript File
+   - follow the promt to name the file (remember as stated above to add the .js file extension)
 4. type into the file: `console.log("Hello World");`
 5. go to Run-->Run and look at the output in the console window
 
