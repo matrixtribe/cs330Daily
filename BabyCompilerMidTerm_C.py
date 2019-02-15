@@ -71,5 +71,6 @@ print("removed class")
 print(contents)
 if contents == '':
     print("C code correctly compiled!")
-
+else:
+    print("error in compilation")
 
