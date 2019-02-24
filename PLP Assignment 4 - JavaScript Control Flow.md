@@ -1,6 +1,6 @@
 # JavaScript Control Flow (http://exploringjs.com/impatient-js/ch_control-flow.html)
 There are many ways you can control the flow of a program. Making things happen or not happen, repeat or not repeat, move forward or stop completely.
-Please see this file " " for more complete examples of code using the following control statements.
+Please see this file " " for more complete examples of (and executable) code using the following control statements.
 ## JavaScript has a full compliment of conditionals:
 Conditionals are things that happen given a certain condition or conditions exist or don't exist, depending on your logic perspective. The ways JavaScript deals wwith this is through _**if**_, _**if/else**_, and _**switch**_ statements.
 
@@ -8,11 +8,12 @@ Conditionals are things that happen given a certain condition or conditions exis
 The main sytax is as follows (https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/use-conditional-logic-with-if-statements):
 ```
 if (condition){statement}
+if (condition){statement} else{statement}
+if (condition){statement} else if (condition){statement} else{statement}
 ```
 With _**if**_ statements, the 'condition' inside the parenthesis must evaluate to true for the 'statement' inside the curly braces to be evaluated.
-Below you'll see examples of code syntax with each type _**if**_ statement
+Below you'll see examples of code syntax with each type _**if**_ statement, notice I separated the curly braces and their statements with new lines for easier reading. It is not required but is good style.
 ```
-var a = true;
     // just if without else
     if (a) {
         console.log("This single condition statement is True")
@@ -30,6 +31,15 @@ var a = true;
     } else {
         console.log("This multi-condition statement is False");
     }
+    
+    // if/else if/else
+    if (a && x){
+        console.log("a and x are True")
+    } else if (x){
+        console.log("x is True")
+    } else {
+        console.log("Both a and a and x are False");
+    }
 ```
 ### switch
 
@@ -45,13 +55,3 @@ var a = true;
   do-while loops
 
 
-
-
-
-1. In-line comments using `//` ex: `//in-line`
-2. Multi-line comments using `/*   */` 
-  ex: 
-  ``` 
-  /* multi-line
-  comment */
-  ```
