@@ -156,7 +156,7 @@ for(let j = 0; j < 2; j++){
 ```
   
   #### _for of_
-  Having the Symbol.iterator property is the most important part of something being iterated over in the _**for of**_ loop. It's a function that can iterate over any iterable. The header has two parts, a variable representing an element of the iterable, and the iterable itself.(http://exploringjs.com/impatient-js/ch_control-flow.html#for-of, https://bitsofco.de/for-in-vs-for-of/)
+  Having the **Symbol.iterator** property is the most important part of something being iterated over in the _**for of**_ loop. It's a function that can iterate over any **iterable**. The header has two parts, a variable representing an element of the iterable, and the iterable itself.(http://exploringjs.com/impatient-js/ch_control-flow.html#for-of, https://bitsofco.de/for-in-vs-for-of/)
 Main syntax:
 ```
 for (element of iterable){statement}
@@ -170,24 +170,30 @@ for (let e of itr) {
 }
 ```
   #### _for await of_
+  Promises, promises, promises. This loop helps us iterate through asynchronous (promised) data. It is necessary because the _**for of**_ loop works through iterators consecutively, so a synchronous iterator would be completely evaluated, but an asynchronous iterator would stop before the end. The _**await**_ makes sure to pause a function or generator until the promise resolves. (https://www.codementor.io/tiagolopesferreira/asynchronous-iterators-in-javascript-jl1yg8la1, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of, http://exploringjs.com/impatient-js/ch_control-flow.html#for-await-of)
 Main syntax:
 ```
-for (variable; condition; incrementer){statement}
+for await (element of asynchronous){statement}
 ```
 Example:
 ```
 // for await of
 
+
 ```
   #### _for in_
-
+_**for in**_ is similar to _**for of**_ but its is used to iterate over anything with an **enumerable** property.(https://bitsofco.de/for-in-vs-for-of/, https://www.w3schools.com/js/js_loop_for.asp, http://exploringjs.com/impatient-js/ch_control-flow.html#for-in)
 Main syntax:
 ```
-for (variable; condition; incrementer){statement}
+for (element in enumerable){statement}
 ```
 Example:
 ```
 // for in
+var str = "enum";
+for(let index in str){
+    console.log("for in: " + index);
+}
 
 ```
 
