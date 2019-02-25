@@ -45,15 +45,41 @@ Below you'll see examples of code syntax with each type _**if**_ statement, noti
 ```
 #### short form _if_
 There's another, shorter syntax for the _**if**_ statement:
+
+```
 // short form if
     if (a) console.log("This short if statement is True");else console.log("This short if statement is False");
+```
 
 ### break and continue
 Before we move on to _**switch**_ statements we should go over the _**break**_ (sinece they are widely used in _**switch**_) and _**continue**_ operators.
 These operators are similar in that they interrupt or change the flow of loops and other statements, and they can be used with lables or by themselves. They are different in that break completely exits a block and stop a statement, but continue simply skips a statement or single iteration of a loop. (https://www.w3schools.com/js/js_break.asp, http://exploringjs.com/impatient-js/ch_control-flow.html#controlling-loops-break-and-continue, https://www.tutorialspoint.com/javascript/javascript_loop_control.htm)
 
 Here are examples of each option:
-
+```
+// break and continue statements
+//standalone break
+for(let i = 0; i<5; i++) {
+    if (i === 3) break;
+    console.log("break at 3: " + i)
+}
+// standalone continue
+for(let i = 0; i<5; i++) {
+    if (i === 3) continue;
+    console.log("continue at 3: " + i)
+}
+//label break
+break3:
+for(let i = 0; i<5; i++) {
+    if (i === 3) break break3;
+    console.log("break label at 3: " + i)
+}
+// label continue
+continue3:
+for(let i = 0; i<5; i++) {
+    if (i === 3) continue continue3;
+    console.log("continue label at 3: " + i)
+```
 
 ### switch
 
