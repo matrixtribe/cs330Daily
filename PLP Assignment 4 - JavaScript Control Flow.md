@@ -81,6 +81,9 @@ for(let i = 0; i<5; i++) {
 ```
 
 ### switch
+Switch statements are useful for simplifying multiple _**if else**_ options and other cases. They use the _**break**_ or _**return**_ statements to exit a clause. Without one of those statments the block continues to evaluate. They also allow for a default value in case no clause evaluate. (https://www.w3schools.com/js/js_switch.asp, http://exploringjs.com/impatient-js/ch_control-flow.html#if)
+Here are some examples:
+
 
 ### loops
   #### various _for_ loops (for, for-of, for-await-of, for-in)
