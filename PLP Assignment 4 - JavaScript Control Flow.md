@@ -6,7 +6,7 @@ Please see this file "https://github.com/matrixtribe/cs330Daily/blob/master/PLP-
 ## JavaScript has a full compliment of conditionals:
 Conditionals are things that happen given a certain condition or conditions exist or don't exist, depending on your logic perspective. The ways JavaScript deals wwith this is through _**if**_, _**if/else**_, and _**switch**_ statements.
 ### _if_, _if/else_, _if else-if else_
-The main sytax is as follows (https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/use-conditional-logic-with-if-statements, http://exploringjs.com/impatient-js/ch_control-flow.html#if):
+The main sytax is as follows (https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/use-conditional-logic-with-if-statements, http://exploringjs.com/impatient-js/ch_control-flow.html#if, http://speakingjs.com/es5/ch13.html,http://www.coasttocoastresearch.com/docjs2/apg-examples/apg-exp/dangling-else.html, http://speakingjs.com/es5/ch13.html):
 ```
 if (condition){statement}
 if (condition){statement} else{statement}
@@ -14,6 +14,7 @@ if (condition){statement} else if (condition){statement} else{statement}
 ```
 With _**if**_ statements, the 'condition' inside the parenthesis must evaluate to true for the 'statement' inside the curly braces to be evaluated.
 Below you'll see examples of code syntax with each type _**if**_ statement, notice I separated the curly braces and their statements with new lines for easier reading. It is not required but is good style.
+>NOTE: be diligent about using curly braces when else is involved to avoid the 'dangling else' problem. Otherwise you could get stuck with a 'nearest match' or 'furthest match' that you did not expect.
 ```
     // just if without else
     if (a) {
