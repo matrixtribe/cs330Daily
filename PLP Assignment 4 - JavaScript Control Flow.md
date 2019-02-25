@@ -41,6 +41,14 @@ Below you'll see examples of code syntax with each type _**if**_ statement, noti
         console.log("Both a and a and x are False");
     }
 ```
+
+### break and continue
+Before we move on to _**switch**_ statements we should go over the _**break**_ (sinece they are widely used in _**switch**_) and _**continue**_ operators.
+These operators are similar in that they interrupt or change the flow of loops and other statements, and they can be used with lables or by themselves. They are different in that break completely exits a block and stop a statement, but continue simply skips a statement or single iteration of a loop. (https://www.w3schools.com/js/js_break.asp, http://exploringjs.com/impatient-js/ch_control-flow.html#controlling-loops-break-and-continue, https://www.tutorialspoint.com/javascript/javascript_loop_control.htm)
+
+Here are examples of each option:
+
+
 ### switch
 
 ### loops
