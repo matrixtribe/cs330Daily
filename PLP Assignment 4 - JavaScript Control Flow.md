@@ -5,7 +5,6 @@ There are many ways you can control the flow of a program. Making things happen 
 Please see this file " " for more complete examples of (and executable) code using the following control statements.
 ## JavaScript has a full compliment of conditionals:
 Conditionals are things that happen given a certain condition or conditions exist or don't exist, depending on your logic perspective. The ways JavaScript deals wwith this is through _**if**_, _**if/else**_, and _**switch**_ statements.
-
 ### _if_, _if/else_, _if else-if else_
 The main sytax is as follows (https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/use-conditional-logic-with-if-statements, http://exploringjs.com/impatient-js/ch_control-flow.html#if):
 ```
@@ -128,13 +127,13 @@ switch (myFavorite){
 ```
 
 ### loops
-Loops run statement multiple times depending on conditions.
-  #### various _for_ loops (for, for-of, for-await-of, for-in)
-  for loops
-  for-of loops
-  for-await-of loops
-  for-in loops
+Loops run statements multiple times depending on conditions.(https://www.w3schools.com/js/js_loop_for.asp)
+  #### _for_
+  _**for**_ loops have a 3 parts to the declaration statement that are all optional, and are used to determine how the loop is executed. The first part is used for initializing one or more variables. If you omit this the variables must be declared outside the loop. The second part is the condition that, if true, runs the loops again. If you omit this is is best the have a _**break**_ statement in the loop to avoid it being infinite. The third part increments the variable that gets evaluated in the condition. Although it is optional, you could end up with an infinite loop without it unless you increment inside the loop.(https://www.w3schools.com/js/js_loop_for.asp, http://exploringjs.com/impatient-js/ch_control-flow.html#for, https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-for-loops)
   
+  #### _for of_
+  #### _for await of_
+  #### _for in_
 
   #### _while_
   A condition is evaluated at the beginning and then the statements are executed as long as it is true. (http://exploringjs.com/impatient-js/ch_control-flow.html#while, https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-while-loops)
