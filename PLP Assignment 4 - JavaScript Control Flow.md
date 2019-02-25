@@ -1,4 +1,6 @@
-# JavaScript Control Flow (http://exploringjs.com/impatient-js/ch_control-flow.html)
+# JavaScript Control Flow 
+(http://exploringjs.com/impatient-js/ch_control-flow.html)
+
 There are many ways you can control the flow of a program. Making things happen or not happen, repeat or not repeat, move forward or stop completely.
 Please see this file " " for more complete examples of (and executable) code using the following control statements.
 ## JavaScript has a full compliment of conditionals:
@@ -41,6 +43,10 @@ Below you'll see examples of code syntax with each type _**if**_ statement, noti
         console.log("Both a and a and x are False");
     }
 ```
+#### short form _if_
+There's another, shorter syntax for the _**if**_ statement:
+// short form if
+    if (a) console.log("This short if statement is True");else console.log("This short if statement is False");
 
 ### break and continue
 Before we move on to _**switch**_ statements we should go over the _**break**_ (sinece they are widely used in _**switch**_) and _**continue**_ operators.
