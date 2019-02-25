@@ -2,7 +2,7 @@
 (http://exploringjs.com/impatient-js/ch_control-flow.html)
 
 There are many ways you can control the flow of a program. Making things happen or not happen, repeat or not repeat, move forward or stop completely.
-Please see this file " " for more complete examples of (and executable) code using the following control statements.
+Please see this file "https://github.com/matrixtribe/cs330Daily/blob/master/PLP-Assignment4.js " for more complete examples of (and executable) code using the following control statements.
 ## JavaScript has a full compliment of conditionals:
 Conditionals are things that happen given a certain condition or conditions exist or don't exist, depending on your logic perspective. The ways JavaScript deals wwith this is through _**if**_, _**if/else**_, and _**switch**_ statements.
 ### _if_, _if/else_, _if else-if else_
