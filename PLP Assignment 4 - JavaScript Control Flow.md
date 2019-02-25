@@ -81,6 +81,19 @@ for(let i = 0; i<5; i++) {
 
 ### switch
 Switch statements are useful for simplifying multiple _**if else**_ options and other cases. They use the _**break**_ or _**return**_ statements to exit a clause. Without one of those statments the block continues to evaluate. They also allow for a default value in case no clause evaluate. (https://www.w3schools.com/js/js_switch.asp, http://exploringjs.com/impatient-js/ch_control-flow.html#if)
+Main syntax (others shown in examples):
+```
+switch (condition){
+    case value:
+        statement;
+        break;
+    case value:
+        statement;
+        break;
+    default:
+        statement;
+}
+```
 Here are some examples:
 ```
 // a switch-case statement
@@ -130,6 +143,12 @@ switch (myFavorite){
 Loops run statements multiple times depending on conditions.(https://www.w3schools.com/js/js_loop_for.asp)
   #### _for_
   _**for**_ loops have a 3 parts to the declaration statement that are all optional, and are used to determine how the loop is executed. The first part is used for initializing one or more variables. If you omit this the variables must be declared outside the loop. The second part is the condition that, if true, runs the loops again. If you omit this is is best the have a _**break**_ statement in the loop to avoid it being infinite. The third part increments the variable that gets evaluated in the condition. Although it is optional, you could end up with an infinite loop without it unless you increment inside the loop.(https://www.w3schools.com/js/js_loop_for.asp, http://exploringjs.com/impatient-js/ch_control-flow.html#for, https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-for-loops)
+Main syntax:
+```
+for (variable; condition; incrementer){statement}
+```
+Example:
+
   
   #### _for of_
   #### _for await of_
