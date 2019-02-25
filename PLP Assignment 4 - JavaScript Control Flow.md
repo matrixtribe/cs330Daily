@@ -170,15 +170,49 @@ for (let e of itr) {
 }
 ```
   #### _for await of_
-  Promises, promises, promises. This loop helps us iterate through asynchronous (promised) data. It is necessary because the _**for of**_ loop works through iterators consecutively, so a synchronous iterator would be completely evaluated, but an asynchronous iterator would stop before the end. The _**await**_ makes sure to pause a function or generator until the promise resolves. (https://www.codementor.io/tiagolopesferreira/asynchronous-iterators-in-javascript-jl1yg8la1, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of, http://exploringjs.com/impatient-js/ch_control-flow.html#for-await-of)
-Main syntax:
+  Promises, promises, promises. This loop helps us iterate through asynchronous (promised) data. It is necessary because the _**for of**_ loop works through iterators consecutively, so a synchronous iterator would be completely evaluated, but an asynchronous iterator would stop before the end. The _**await**_ makes sure to pause a function or generator until the promise resolves. (https://www.codementor.io/tiagolopesferreira/asynchronous-iterators-in-javascript-jl1yg8la1, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of, http://exploringjs.com/impatient-js/ch_control-flow.html#for-await-of, https://medium.freecodecamp.org/promises-in-javascript-explained-277b98850de, https://dev.to/nestedsoftware/the-iterators-are-coming-symboliterator-and-symbolasynciterator-in-javascript-hj)
+Main syntax (can only be called from within async function):
 ```
 for await (element of asynchronous){statement}
 ```
-Example:
+Example of code templated and altered from (https://dev.to/nestedsoftware/the-iterators-are-coming-symboliterator-and-symbolasynciterator-in-javascript-hj):
 ```
 // for await of
+const gettingSleepy = () => setInterval(()=>console.log('eyelids flutter'), 300);
 
+class tired {
+    constructor() {
+        this.index = 0;
+        this.steps = ['yawn', 'close eyes','snore']
+    }
+
+    next() {
+        const value = this.steps[this.index];
+        const done = !(this.index in this.steps);
+        this.index += 1;
+        return new Promise(
+            resolve=>setTimeout(()=>resolve({ value, done }), 500))
+    }
+
+    [Symbol.asyncIterator]() {
+        return {
+            next: () => this.next()
+        }
+    }
+}
+
+const goingToBed = async () => {
+    const interval = gettingSleepy();
+
+    const bedTime = new tired();
+    for await (const doze of bedTime) {
+        console.log('sheep = ' + doze)
+    }
+
+    clearInterval(interval)
+};
+
+goingToBed();
 
 ```
   #### _for in_
