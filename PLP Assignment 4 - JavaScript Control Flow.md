@@ -148,11 +148,48 @@ Main syntax:
 for (variable; condition; incrementer){statement}
 ```
 Example:
-
+```
+// for
+for(let j = 0; j < 2; j++){
+    console.log("for: " + j);
+}
+```
   
   #### _for of_
+  Having the Symbol.iterator property is the most important part of something being iterated over in the _**for of**_ loop. It's a function that can iterate over any iterable. The header has two parts, a variable representing an element of the iterable, and the iterable itself.(http://exploringjs.com/impatient-js/ch_control-flow.html#for-of, https://bitsofco.de/for-in-vs-for-of/)
+Main syntax:
+```
+for (element of iterable){statement}
+```
+Example:
+```
+// for of
+var itr = [1, 2, 3]
+for (let e of itr) {
+    console.log("for of: " + e)
+}
+```
   #### _for await of_
+Main syntax:
+```
+for (variable; condition; incrementer){statement}
+```
+Example:
+```
+// for await of
+
+```
   #### _for in_
+
+Main syntax:
+```
+for (variable; condition; incrementer){statement}
+```
+Example:
+```
+// for in
+
+```
 
   #### _while_
   A condition is evaluated at the beginning and then the statements are executed as long as it is true. (http://exploringjs.com/impatient-js/ch_control-flow.html#while, https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-while-loops)
