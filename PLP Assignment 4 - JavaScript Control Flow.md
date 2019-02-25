@@ -83,7 +83,49 @@ for(let i = 0; i<5; i++) {
 ### switch
 Switch statements are useful for simplifying multiple _**if else**_ options and other cases. They use the _**break**_ or _**return**_ statements to exit a clause. Without one of those statments the block continues to evaluate. They also allow for a default value in case no clause evaluate. (https://www.w3schools.com/js/js_switch.asp, http://exploringjs.com/impatient-js/ch_control-flow.html#if)
 Here are some examples:
-
+```
+// a switch-case statement
+var myFavorite = 'gray';
+// uses default
+switch (myFavorite){
+    case 'red':
+        console.log('Your favorite color is red!');
+        break;
+    case 'orange':
+        console.log('Your favorite color is orange!');
+        break;
+    case 'black':
+        console.log('Your favorite color is black!');
+        break;
+    default:
+        console.log('You live in darkness.')
+}
+// stops at gray
+switch (myFavorite){
+    case 'red':
+        console.log('Your favorite color is red!');
+        break;
+    case 'gray':
+        console.log('Your favorite color is gray!');
+        break;
+    case 'black':
+        console.log('Your favorite color is black!');
+        break;
+    default:
+        console.log('You live in darkness.')
+}
+// evaluates and executes cases after the matched clause since no 'break' or 'return'
+switch (myFavorite){
+    case 'red':
+        console.log('Your favorite color is red!');
+    case 'gray':
+        console.log('Your favorite color is gray!');
+    case 'black':
+        console.log('Your favorite color is black!');
+    default:
+        console.log('You live in darkness.')
+}
+```
 
 ### loops
   #### various _for_ loops (for, for-of, for-await-of, for-in)
