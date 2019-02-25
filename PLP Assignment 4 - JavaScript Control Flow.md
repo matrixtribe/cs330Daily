@@ -24,14 +24,13 @@ Below you'll see examples of code syntax with each type _**if**_ statement, noti
     if (a){
         console.log("This single condition statement is True")
     } else {
-        console.log("This single condition statement is False");
+        console.log("This single condition statement is False")
     }
     // multi-condition if/else statement (i.e. "if x>0 && y< 10)
     if (a && x){
         console.log("This multi-condition statement is True")
-
     } else {
-        console.log("This multi-condition statement is False");
+        console.log("This multi-condition statement is False")
     }
     
     // if/else if/else
@@ -40,7 +39,7 @@ Below you'll see examples of code syntax with each type _**if**_ statement, noti
     } else if (x){
         console.log("x is True")
     } else {
-        console.log("Both a and a and x are False");
+        console.log("Both a and a and x are False")
     }
 ```
 #### short form _if_
@@ -93,5 +92,18 @@ for(let i = 0; i<5; i++) {
   #### various _while_ loops (while, do while)
   while loops
   do-while loops
+
+### short circuit evaluation
+javaScript short circuits - meaning, in a logical expression, it evaluates left to right and stops once it successfully evaluates without going on to further evaluate any other logical options. (https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)
+For example:
+```
+// short circuit - height is undefined so age is evaluated
+// since age is successfully evaluated JS stops and doesn't even look at name 
+var height;
+var age = 35;
+var name = 'Alice'
+console.log(height || age || name);
+```
+
 
 
