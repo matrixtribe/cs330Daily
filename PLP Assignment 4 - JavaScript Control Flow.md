@@ -128,15 +128,34 @@ switch (myFavorite){
 ```
 
 ### loops
+Loops run statement multiple times depending on conditions.
   #### various _for_ loops (for, for-of, for-await-of, for-in)
   for loops
   for-of loops
   for-await-of loops
   for-in loops
   
-  #### various _while_ loops (while, do while)
-  while loops
-  do-while loops
+
+  #### _while_
+  A condition is evaluated at the beginning and then the statements are executed as long as it is true. (http://exploringjs.com/impatient-js/ch_control-flow.html#while, https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-while-loops)
+  ```
+    // while - statement will execute 3 times
+var num = 0;
+while (num <= 2){
+    console.log("while " + num);
+    num++;
+}
+  ```
+  #### _do while_
+  A statement is first executed, then the condition is evaluated, if True this process happens again. (http://exploringjs.com/impatient-js/ch_control-flow.html#do-while, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
+  
+  ```
+num = 0;
+// do while - even though num is 0 the statement will still execute once
+do {
+    console.log("do while " + num);
+} while (num > 0) ;
+```
 
 ### short circuit evaluation
 javaScript short circuits - meaning, in a logical expression, it evaluates left to right and stops once it successfully evaluates without going on to further evaluate any other logical options. (https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)
