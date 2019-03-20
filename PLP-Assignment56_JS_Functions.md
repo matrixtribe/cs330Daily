@@ -23,6 +23,7 @@ function nameOfFunction(parameters){
 }
 // invoked
 
+
 // function expressions - can be inline
 // named
 var variableName = function nameOfFunction(parameters){/*body of function*/};
@@ -37,7 +38,7 @@ var functionName = (parameters) => {
   // body of function
 }
 
-// Function constructor
+// Function constructor -- arguments MUST be strings
 var variableName = new Function(arguments, separted, by, commas, the last argument; is the function body; with code separated by semi-colons;);
 
 
