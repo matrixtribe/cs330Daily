@@ -136,8 +136,51 @@ console.log(functionScope());
 ### Variables as well as function arguments in JS are passed by value (change not visible globally) if they are primitive, by reference (change visible outside the function) if they are objects. (https://www.w3schools.com/js/js_function_parameters.asp, https://medium.freecodecamp.org/understanding-by-reference-vs-by-value-d49139beb1c4, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 ```
 // passed by value
-
+var q = "initial value";
+console.log("q before function " + q);
+function changeValue(value){
+    value = "new value";
+    console.log("q passed to function " + value)
+}
+// invoke function
+changeValue(q);
+// print q - value stays the same
+console.log("q after function " + q);
 
 // passed by reference
+var character = new Object();
+character.name = "Gabrielle";
+character.profession = "Bard";
+console.log("Character name is : " + character.name);
+console.log("Initial character profession is : " + character.profession);
+
+function changeProfession(object, job){
+    object.profession = job;
+}
+
+// object property is changed in function and shows outside function scope
+changeProfession(character, "Warrior");
+console.log("Character name is : " + character.name);
+console.log("New character profession is : " + character.profession);
+
+```
+## Assignment exercise
+The following code follows what happens to array variables when assigned different values. Keep in mind that i JS an array is an object so the values will be passed by reference.
+```
+
+// Assignment handling
+var r = ['c','a','t'];
+console.log("first value or r: " + r);
+var s = ['d','o','g'];
+console.log("first value of s: " + s);
+// r now refers to s
+r=s;
+console.log("value of r after 'r=s': " + r);
+// the value of the element at index 1 in array s is overwritten by value 'u'
+s[1] = 'u';
+console.log("value of s after 's[1] = u': " + s);
+// since r points to s now, they are the same even though the 'o' was changed to 'u' after r was assigned to s
+console.log("final value of r: " + r);
+console.log("final value of s: " + s);
 
 ```
