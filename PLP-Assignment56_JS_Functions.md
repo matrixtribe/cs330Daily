@@ -1,5 +1,5 @@
 # JavaScript Functions
->NOTE: Code examples can be found and run in this file: 
+>NOTE: Code examples can be found and run in this file: https://github.com/matrixtribe/cs330Daily/blob/master/PLP-Assignment56.js
 
 Functions are for code reuse and program structure. The make your code easier to read and allow for writing less redundant code. Functions can be called over and over. They can be recursive and there are multiple ways to both create and call them. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions, https://www.w3schools.com/js/js_functions.asp, https://www.w3schools.com/js/js_function_definition.asp, https://codeburst.io/javascript-functions-understanding-the-basics-207dbf42ed99)
 
