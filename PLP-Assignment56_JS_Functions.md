@@ -93,3 +93,51 @@ console.log( first + middle + last + " is the BEST SHERO EVER!!")
 ## Variables
 Variables are global if they are declared outside a function. A variable declared inside a function is local to that function (many functions can use the same variable names) as are the arguments passed to them, however a function can see variables outside of it. This only applies from the outside in. It is useful for nested functions. An exception to local variable scope in functions, is if a value is assigned to an undeclared variable. That variable will automatically become global.(https://www.w3schools.com/js/js_scope.asp)
 
+Loops and other block didn't start out having local scope. After ECMA Script 6 introduced the *let* and *const* statements that has changed. They allow for block scope.(https://flaviocopes.com/javascript-loops-and-scope/, https://www.w3schools.com/js/js_es6.asp)
+
+```
+// variable scope
+// using var there is a duplicate variable because the x is global and there is no block scope with var
+var a = 3;
+var b = "Global b";
+while(a > 0){
+    var b = 'loop b';
+    console.log(b);
+    a--;
+}
+// Global b is overwritten in loop so only local b prints
+console.log(b);
+
+// using let makes the variable inside the loop block scoped so it will run 3 times since the original variable is no
+// longer overwritten
+var y = 3;
+var z = "Global z";
+while(y > 0){
+    let z = 'loop z';
+    console.log(z);
+    y--;
+}
+console.log(z);
+
+// functions inherently have their own scope
+var c = "global c";
+
+function functionScope(){
+    var c;
+    c = "function c";
+    return c;
+}
+
+console.log(c);
+console.log(functionScope());
+
+```
+
+### Variables as well as function arguments in JS are passed by value (change not visible globally) if they are primitive, by reference (change visible outside the function) if they are objects. (https://www.w3schools.com/js/js_function_parameters.asp, https://medium.freecodecamp.org/understanding-by-reference-vs-by-value-d49139beb1c4, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+```
+// passed by value
+
+
+// passed by reference
+
+```
